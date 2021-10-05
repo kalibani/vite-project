@@ -1,4 +1,15 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router/router'
+import { createHead } from '@vueuse/head'
+// import { store } from './store'
+import './index.css'
 
-createApp(App).mount('#app')
+const head = createHead()
+const app = createApp(App)
+
+// app.use(store)
+app.use(router)
+app.use(head)
+
+app.mount('#app')
