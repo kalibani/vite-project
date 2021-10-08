@@ -130,5 +130,5 @@
 </template>
 <script setup lang="ts">
 import HelloWorld from '@/components/HelloWorld.vue'
-import BaseTemplate from '@/containers/templates/base/index.vue'
+import BaseTemplate from '@/containers/templates/base/index.vue'  
 </script>
